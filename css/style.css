@@ -1,7 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 a {
@@ -60,6 +64,15 @@ button {
   color: black;
 }
 
+.top__menu-features {
+  border: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .active {
   color: #F25822;
 }
@@ -82,28 +95,50 @@ button {
 }
 
 .top-content__text-title {
+  font-weight: 700;
   font-size: 60px;
   line-height: 70px;
 }
 
 .top-content__text-text {
-  margin-top: 17px;
+  margin-top: 29px;
+  font-weight: 500;
   font-size: 20px;
   line-height: 23px;
   color: #888888;
 }
 
 .top-context__buttons {
-  margin-top: 17px;
+  margin-top: 39px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 .button__transparent {
-  background-color: transparent;
   color: #AAAAAA;
-  box-shadow: none;
+  margin-left: 27px;
+  padding-left: 45px;
 }
 
-.top-footer{
+.button__watch{
+  position: relative;
+}
+
+.button__watch::before{
+  content:'';
+  display: block;
+  height: 30px;
+  width: 30px;
+  background-image: url('../img/play-video.svg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: -6px;
+  left: -45px;
+}
+
+.top-footer {
   margin-top: 162px;
   display: flex;
   justify-content: space-between;
