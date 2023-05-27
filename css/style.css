@@ -33,7 +33,7 @@ button {
   background-color: transparent;
 }
 
-.top {
+.center {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -121,12 +121,12 @@ button {
   padding-left: 45px;
 }
 
-.button__watch{
+.button__watch {
   position: relative;
 }
 
-.button__watch::before{
-  content:'';
+.button__watch::before {
+  content: '';
   display: block;
   height: 30px;
   width: 30px;
@@ -140,6 +140,116 @@ button {
 
 .top-footer {
   margin-top: 162px;
+  margin-bottom: 90px;
   display: flex;
   justify-content: space-between;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(20%, 370px));
+  gap: 30px;
+  justify-content: center;
+  padding: 100px 0px;
+}
+
+.features__card {
+  padding: 40px 30px 25px 30px;
+  /* outline: 1px solid tomato; */
+  box-sizing: border-box;
+}
+
+.features__card:hover {
+  box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.features__card-title {
+  margin-top: 25px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.features__card-text {
+  margin-top: 17px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  width: 90%;
+  color: #666666;
+}
+
+.features__card-read_more {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.service {
+  background-color: #FAFAFA;
+  padding: 90px 0 100px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.service__title {
+  margin-bottom: 19px;
+  margin-top: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.service__text {
+  margin: 0 auto 55px auto;
+  max-width: 680px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #666666;
+}
+
+.service__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.service__card {
+  background-color: #fff;
+  max-width: 370px;
+  padding-bottom: 50px;
+}
+
+.service__card:hover {
+  box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+}
+
+.service__card-title {
+  margin-bottom: 22px;
+  margin-top: 25px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.service__card-text {
+  margin: 0 30px 39px 30px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #AAAAAA;
+}
+
+.service__card-button {
+  display: block;
+  margin: 0 auto;
+  padding-left: 46px;
+  padding-right: 36px;
 }
